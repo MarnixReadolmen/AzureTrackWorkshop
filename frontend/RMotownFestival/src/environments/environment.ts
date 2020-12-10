@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  festivalName: "RMotownFestival - DEV",
-  apiBaseUrl: "https://localhost:44395/api/"
+  festivalName: 'RMotownFestival - DEV',
+  apiBaseUrl: 'https://localhost:5001/api/',
 };
 
 /*
