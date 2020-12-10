@@ -21,7 +21,7 @@ namespace RMotownFestival.Api.Controllers
         [HttpGet]
         public string[] GetAllPictureUrls()
         {
-            BlobContainerClient container = BlobUtility.GetPicturesContainer();
+            BlobContainerClient container = BlobUtility.GetThumbsContainer();   //.GetPicturesContainer();
             return container.GetBlobs()
                             .Select(blob => BlobUtility.GetSasUri(container, blob.Name))
                             .ToArray();
